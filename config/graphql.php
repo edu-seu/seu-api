@@ -78,7 +78,7 @@ return [
                 'users' => \App\GraphQL\Queries\UserQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                'createUser' => \App\GraphQL\Mutations\CreateUserMutation::class,
             ],
             // The types only available in this schema
             'types' => [
