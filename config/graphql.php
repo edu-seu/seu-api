@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 return [
     'route' => [
@@ -75,14 +75,14 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // ExampleQuery::class,
+                'users' => \App\GraphQL\Queries\UserQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                'createUser' => \App\GraphQL\Mutations\CreateUserMutation::class,
             ],
             // The types only available in this schema
             'types' => [
-                // ExampleType::class,
+                'User' => \App\GraphQL\Types\UserType::class,
             ],
 
             // Laravel HTTP middleware
