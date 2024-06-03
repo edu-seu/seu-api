@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b480a5e080589d6cb37cb743e8665f98",
+    "content-hash": "b87a2bd3467d8da4f0631d112521e7df",
     "packages": [
         {
             "name": "brick/math",
@@ -1051,6 +1051,48 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "haydenpierce/class-finder",
+            "version": "0.5.3",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:hpierce1102/ClassFinder.git",
+                "reference": "40703445c18784edcc6411703e7c3869af11ec8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/hpierce1102%2FClassFinder/repository/archive.zip?sha=40703445c18784edcc6411703e7c3869af11ec8c",
+                "reference": "40703445c18784edcc6411703e7c3869af11ec8c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HaydenPierce\\ClassFinder\\": "src/",
+                    "HaydenPierce\\ClassFinder\\UnitTest\\": "test/unit"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hayden Pierce",
+                    "email": "hayden@haydenpierce.com"
+                }
+            ],
+            "description": "A library that can provide of a list of classes in a given namespace",
+            "time": "2023-06-18T17:43:01+00:00"
+        },
+        {
             "name": "laragraph/utils",
             "version": "v2.1.0",
             "source": {
@@ -1370,6 +1412,70 @@
                 "source": "https://github.com/laravel/prompts/tree/v0.1.22"
             },
             "time": "2024-05-10T19:22:18+00:00"
+        },
+        {
+            "name": "laravel/sanctum",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sanctum.git",
+                "reference": "9cfc0ce80cabad5334efff73ec856339e8ec1ac1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/9cfc0ce80cabad5334efff73ec856339e8ec1ac1",
+                "reference": "9cfc0ce80cabad5334efff73ec856339e8ec1ac1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/console": "^11.0",
+                "illuminate/contracts": "^11.0",
+                "illuminate/database": "^11.0",
+                "illuminate/support": "^11.0",
+                "php": "^8.2",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^9.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Sanctum\\SanctumServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Sanctum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+            "keywords": [
+                "auth",
+                "laravel",
+                "sanctum"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/sanctum/issues",
+                "source": "https://github.com/laravel/sanctum"
+            },
+            "time": "2024-04-10T19:39:58+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2440,6 +2546,140 @@
             "time": "2024-03-06T16:17:14+00:00"
         },
         {
+            "name": "nuwave/lighthouse",
+            "version": "v6.36.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuwave/lighthouse.git",
+                "reference": "dc3125d6b29da7552dfcf61dc5470aedc1cc533a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/dc3125d6b29da7552dfcf61dc5470aedc1cc533a",
+                "reference": "dc3125d6b29da7552dfcf61dc5470aedc1cc533a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "haydenpierce/class-finder": "^0.4 || ^0.5",
+                "illuminate/auth": "^9 || ^10 || ^11",
+                "illuminate/bus": "^9 || ^10 || ^11",
+                "illuminate/contracts": "^9 || ^10 || ^11",
+                "illuminate/http": "^9 || ^10 || ^11",
+                "illuminate/pagination": "^9 || ^10 || ^11",
+                "illuminate/queue": "^9 || ^10 || ^11",
+                "illuminate/routing": "^9 || ^10 || ^11",
+                "illuminate/support": "^9 || ^10 || ^11",
+                "illuminate/validation": "^9 || ^10 || ^11",
+                "laragraph/utils": "^1.5 || ^2",
+                "php": "^8",
+                "thecodingmachine/safe": "^1 || ^2",
+                "webonyx/graphql-php": "^15"
+            },
+            "require-dev": {
+                "algolia/algoliasearch-client-php": "^3 || ^4",
+                "bensampo/laravel-enum": "^5 || ^6",
+                "dms/phpunit-arraysubset-asserts": "^0.4 || ^0.5",
+                "ergebnis/composer-normalize": "^2.2.2",
+                "fakerphp/faker": "^1.21",
+                "google/protobuf": "^3.21",
+                "larastan/larastan": "^2.6.1",
+                "laravel/framework": "^9 || ^10 || ^11",
+                "laravel/legacy-factories": "^1.1.1",
+                "laravel/pennant": "^1",
+                "laravel/scout": "^8 || ^9 || ^10 || ^11",
+                "mattiasgeniar/phpunit-query-count-assertions": "^1.1",
+                "mll-lab/graphql-php-scalars": "^6",
+                "mll-lab/php-cs-fixer-config": "^5",
+                "mockery/mockery": "^1.5",
+                "nesbot/carbon": "^2.62.1",
+                "orchestra/testbench": "^7.7 || ^8.8 || ^9",
+                "phpbench/phpbench": "^1.2.6",
+                "phpstan/extension-installer": "^1",
+                "phpstan/phpstan": "^1.10.3",
+                "phpstan/phpstan-mockery": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.1.1",
+                "phpunit/phpunit": "^9.6.4 || ^10 || ^11",
+                "predis/predis": "^1.1 || ^2.1",
+                "pusher/pusher-php-server": "^5 || ^6 || ^7.0.2",
+                "rector/rector": "^1",
+                "thecodingmachine/phpstan-safe-rule": "^1.2"
+            },
+            "suggest": {
+                "ext-protobuf": "Improve protobuf serialization performance (used for tracing)",
+                "google/protobuf": "Required when using the tracing driver federated-tracing",
+                "laravel/pennant": "Required for the @feature directive",
+                "laravel/scout": "Required for the @search directive",
+                "mll-lab/graphql-php-scalars": "Useful scalar types, required for @whereConditions",
+                "mll-lab/laravel-graphiql": "A graphical interactive in-browser GraphQL IDE - integrated with Laravel",
+                "pusher/pusher-php-server": "Required when using the Pusher Subscriptions driver"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nuwave\\Lighthouse\\LighthouseServiceProvider",
+                        "Nuwave\\Lighthouse\\Async\\AsyncServiceProvider",
+                        "Nuwave\\Lighthouse\\Auth\\AuthServiceProvider",
+                        "Nuwave\\Lighthouse\\Cache\\CacheServiceProvider",
+                        "Nuwave\\Lighthouse\\GlobalId\\GlobalIdServiceProvider",
+                        "Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider",
+                        "Nuwave\\Lighthouse\\Pagination\\PaginationServiceProvider",
+                        "Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider",
+                        "Nuwave\\Lighthouse\\Testing\\TestingServiceProvider",
+                        "Nuwave\\Lighthouse\\Validation\\ValidationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nuwave\\Lighthouse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Moore",
+                    "email": "chris@nuwavecommerce.com",
+                    "homepage": "https://www.nuwavecommerce.com"
+                },
+                {
+                    "name": "Benedikt Franke",
+                    "email": "benedikt@franke.tech",
+                    "homepage": "https://franke.tech"
+                }
+            ],
+            "description": "A framework for serving GraphQL from Laravel",
+            "homepage": "https://lighthouse-php.com",
+            "keywords": [
+                "graphql",
+                "laravel",
+                "laravel-graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/nuwave/lighthouse/issues",
+                "source": "https://github.com/nuwave/lighthouse"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spawnia",
+                    "type": "github"
+                },
+                {
+                    "url": "https://issuehunt.io/r/nuwave/lighthouse",
+                    "type": "issuehunt"
+                },
+                {
+                    "url": "https://www.patreon.com/lighthouse_php",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-05-05T09:15:52+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.9.2",
             "source": {
@@ -3231,59 +3471,34 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
-            "name": "rebing/graphql-laravel",
-            "version": "9.5.0",
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rebing/graphql-laravel.git",
-                "reference": "d486982917d82d7f3b5fd80db76591c1879d0f83"
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/d486982917d82d7f3b5fd80db76591c1879d0f83",
-                "reference": "d486982917d82d7f3b5fd80db76591c1879d0f83",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "^10.0|^11.0",
-                "illuminate/support": "^10.0|^11.0",
-                "laragraph/utils": "^2.0.1",
-                "php": "^8.1",
-                "thecodingmachine/safe": "^2.4",
-                "webonyx/graphql-php": "^15.0.3"
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "php": "^8.0"
             },
             "require-dev": {
-                "ext-pdo_sqlite": "*",
-                "friendsofphp/php-cs-fixer": "^3",
-                "larastan/larastan": "^2",
-                "mfn/php-cs-fixer-config": "^2",
-                "mockery/mockery": "^1.2",
-                "orchestra/testbench": "^8.0|^9.0|^9.x-dev",
-                "phpstan/phpstan": "^1",
-                "phpunit/phpunit": "^10.5",
-                "thecodingmachine/phpstan-safe-rule": "^1"
-            },
-            "suggest": {
-                "mll-lab/laravel-graphiql": "Easily integrate GraphiQL into your Laravel projects. "
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "9.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Rebing\\GraphQL\\GraphQLServiceProvider"
-                    ],
-                    "aliases": {
-                        "GraphQL": "Rebing\\GraphQL\\Support\\Facades\\GraphQL"
-                    }
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Rebing\\GraphQL\\": "src/"
+                    "Spatie\\LaravelPackageTools\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3292,51 +3507,251 @@
             ],
             "authors": [
                 {
-                    "name": "Rebing OÜ",
-                    "homepage": "http://www.rebing.ee",
-                    "role": "Company"
-                },
-                {
-                    "name": "Mikk Mihkel Nurges",
-                    "email": "mikk.nurges@rebing.ee",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Folklore",
-                    "email": "info@atelierfolklore.ca",
-                    "homepage": "http://atelierfolklore.ca"
-                },
-                {
-                    "name": "David Mongeau-Petitpas",
-                    "email": "dmp@atelierfolklore.ca",
-                    "homepage": "http://mongo.ca",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Podar",
-                    "email": "markus@fischer.name",
-                    "homepage": "https://github.com/mfn",
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
                     "role": "Developer"
                 }
             ],
-            "description": "Laravel wrapper for PHP GraphQL",
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
             "keywords": [
-                "framework",
-                "graphql",
-                "laravel",
-                "react"
+                "laravel-package-tools",
+                "spatie"
             ],
             "support": {
-                "issues": "https://github.com/rebing/graphql-laravel/issues",
-                "source": "https://github.com/rebing/graphql-laravel/tree/9.5.0"
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
             },
             "funding": [
                 {
-                    "url": "https://github.com/mfn",
+                    "url": "https://github.com/spatie",
                     "type": "github"
                 }
             ],
-            "time": "2024-03-06T19:25:58+00:00"
+            "time": "2024-03-20T07:29:11+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "6.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "17607924aa0aa89bc0153c2ce45ed7c55083367b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/17607924aa0aa89bc0153c2ce45ed7c55083367b",
+                "reference": "17607924aa0aa89bc0153c2ce45ed7c55083367b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/container": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0",
+                "illuminate/database": "^8.12|^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/passport": "^11.0|^12.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.4|^10.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.x-dev",
+                    "dev-master": "6.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 8.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/6.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-04-19T12:35:28+00:00"
+        },
+        {
+            "name": "spatie/laravel-sluggable",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-sluggable.git",
+                "reference": "a44afe6f317959bcfdadcec3148486859fd5c1f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-sluggable/zipball/a44afe6f317959bcfdadcec3148486859fd5c1f5",
+                "reference": "a44afe6f317959bcfdadcec3148486859fd5c1f5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+                "pestphp/pest": "^1.20|^2.0",
+                "spatie/laravel-translatable": "^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Sluggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate slugs when saving Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-sluggable",
+            "keywords": [
+                "laravel-sluggable",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/laravel-sluggable/tree/3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-26T08:33:29+00:00"
+        },
+        {
+            "name": "spatie/laravel-translatable",
+            "version": "6.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-translatable.git",
+                "reference": "d55384cbcf867b3cf21ff4d062403596d94acf81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/d55384cbcf867b3cf21ff4d062403596d94acf81",
+                "reference": "d55384cbcf867b3cf21ff4d062403596d94acf81",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0|^10.0|^11.0",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.11"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "pestphp/pest": "^1.20|^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Translatable\\TranslatableServiceProvider"
+                    ]
+                },
+                "aliases": {
+                    "Translatable": "Spatie\\Translatable\\Facades\\Translatable"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Translatable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A trait to make an Eloquent model hold translations",
+            "homepage": "https://github.com/spatie/laravel-translatable",
+            "keywords": [
+                "eloquent",
+                "i8n",
+                "laravel-translatable",
+                "model",
+                "multilingual",
+                "spatie",
+                "translate"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-translatable/issues",
+                "source": "https://github.com/spatie/laravel-translatable/tree/6.7.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-14T11:35:51+00:00"
         },
         {
             "name": "symfony/clock",
