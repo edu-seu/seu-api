@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "b480a5e080589d6cb37cb743e8665f98",
-=======
     "content-hash": "b87a2bd3467d8da4f0631d112521e7df",
->>>>>>> 349ce4d (change graphql libarary and update queries)
     "packages": [
         {
             "name": "brick/math",
