@@ -26,6 +26,7 @@ services:
     volumes:
       - .:/var/www
       - ./docker/web/conf.d/:/etc/nginx/conf.d/
+      - ./docker/web/share/:/usr/share/
     ports:
       - "80:80"
       - "443:443"
